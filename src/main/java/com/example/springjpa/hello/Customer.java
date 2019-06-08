@@ -35,7 +35,7 @@ public class Customer {
 	@Column(name = "lastName")
 	private String lastName;
 	
-	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
 	private final List<Phone> phones = new ArrayList<>();
 
 	public Customer(String firstName, String lastName) {
