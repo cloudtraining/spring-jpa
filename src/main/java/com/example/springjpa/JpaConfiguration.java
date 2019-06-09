@@ -1,9 +1,7 @@
 package com.example.springjpa;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
-@EnableTransactionManagement
-@Configuration
+//@EnableTransactionManagement
+//@Configuration
 public class JpaConfiguration {
 //    @Autowired
 //    @Bean(name = "transactionManager")
