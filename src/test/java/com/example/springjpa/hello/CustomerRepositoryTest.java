@@ -70,7 +70,7 @@ public class CustomerRepositoryTest implements ApplicationContextAware{
 		int size = customer.getPhones().size();
 		assertEquals(2, size);
 		cust.ifPresent(customer1 -> {log.info(String.format("returned customer from findById %s", customer1.toString())); });
-		assertEquals("Customer(id=1, firstName=Jack, lastName=Bauer, phones=[Phone(id=2, type=home, number=309.123.1234), Phone(id=3, type=cell, number=309.321.4321)])", customer.toString());
+		assertEquals("Customer(id=1, firstName=Jack, lastName=Bauer, phones=[Phone(id=1, type=home, number=309.123.1234), Phone(id=2, type=cell, number=309.321.4321)])", customer.toString());
 	}
 	
 	@Test

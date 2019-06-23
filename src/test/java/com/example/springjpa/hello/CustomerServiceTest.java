@@ -24,6 +24,6 @@ public class CustomerServiceTest {
 		Customer customer = service.findById(1L);
 		int size = customer.getPhones().size();
 		assertEquals(2, size);
-		assertEquals("Customer(id=1, firstName=Jack, lastName=Bauer, phones=[Phone(id=2, type=home, number=309.123.1234), Phone(id=3, type=cell, number=309.321.4321)])", customer.toString());
+		assertEquals("Customer(id=1, firstName=Jack, lastName=Bauer, phones=[Phone(id=1, type=home, number=309.123.1234), Phone(id=2, type=cell, number=309.321.4321)])", customer.toString());
 	}
 }
